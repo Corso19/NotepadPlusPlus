@@ -1,0 +1,34 @@
+﻿<Window x:Class="WPFNotepad.HelpDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFNotepad"
+        mc:Ignorable="d"
+        Title="About" Height="300" Width="300"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+            <TextBlock FontSize="24" 
+                   HorizontalAlignment="Center"
+                   FontWeight="Bold">
+            Notepad++ clone
+            </TextBlock>
+            <TextBlock FontSize="18"
+                   FontWeight="SemiBold">
+            About
+            </TextBlock>
+            <TextBlock TextWrapping="Wrap">
+           Acatrinei Stefan<LineBreak/>
+            </TextBlock>
+            <TextBlock FontSize="18"
+                    FontWeight="SemiBold">
+            Adresa email
+            </TextBlock>
+            <TextBlock TextWrapping="Wrap">
+            stefan.acatrinei@student.unitbv.ro
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>
