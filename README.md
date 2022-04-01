@@ -1,3 +1,3 @@
 # NotepadPlusPlus
 
-Notepad Clone that reproduces features of the original app on the Windows OS
+Notepad Clone that reproduces features of the popular text editor
