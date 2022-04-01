@@ -1,0 +1,26 @@
+﻿<Window x:Class="Notepad_Plus_Plus.Line"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notepad_Plus_Plus"
+        mc:Ignorable="d"
+        Title="Line" Height="520" Width="800"
+        
+        ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Insert line no:"
+               FontSize="25"
+               HorizontalAlignment="Center" Margin="0,136,0,249"/>
+        <TextBox x:Name="input"
+                 Height="33"
+                 Width="400"
+                 FontSize="25"/>
+        <Button x:Name="InputButton"
+                Height="40"
+                Width="150"
+                Content="Go to"
+                Click="goTo"
+                FontSize="25" Margin="325,269,325,125"/>
+    </Grid>
+</Window>

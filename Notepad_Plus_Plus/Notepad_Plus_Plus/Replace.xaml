@@ -1,0 +1,56 @@
+﻿<Window x:Class="Notepad_Plus_Plus.Replace"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Notepad_Plus_Plus"
+        mc:Ignorable="d"
+        Title="Replace" Height="450" Width="800"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="120"/>
+        </Grid.RowDefinitions>
+        <Label Name="Word"
+               Grid.Row="1"
+               Content="Insert word to replace:"
+               HorizontalContentAlignment="Center"
+               FontSize="20"/>
+        <TextBox x:Name="WordInput"
+                 Grid.Row="2"
+                 Height="25"
+                 Width="300" Margin="246,0,247.6,35"
+                 />
+        <Label Name="WordReplacing"
+               Grid.Row="3"
+               Content="Insert word to replace with:"
+               HorizontalContentAlignment="Center"
+               FontSize="20"/>
+        <TextBox x:Name="WordReplace"
+                 Grid.Row="4"
+                 Height="25"
+                 Width="300" Margin="246,5,247.6,30"
+                 />
+        <Button x:Name="ReplaceButon"
+                Grid.Row="5"
+                Height="35"
+                Width="120"
+                Content="Replace"
+                FontSize="15" Margin="276,42,404,42"
+                Click="ReplaceWord"
+                />
+        <Button x:Name="ReplaceAllButton"
+                Grid.Row="5"
+                Height="35"
+                Width="120"
+                Content="Replace All"
+                FontSize="15" Margin="428,42,252,42"
+                Click="ReplaceAll"
+                />
+    </Grid>
+</Window>
